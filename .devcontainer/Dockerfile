@@ -11,6 +11,4 @@ RUN rm -f /usr/lib/python3.12/EXTERNALLY-MANAGED
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-RUN CMAKE_ARGS='-DGGML_CUDA=on -DCMAKE_CUDA_ARCHITECTURES="89;120"' pip install llama-cpp-python --force-reinstall --verbose
-
 CMD ["bash"]
